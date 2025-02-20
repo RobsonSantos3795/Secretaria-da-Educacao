@@ -1,0 +1,28 @@
+body {
+    background-color: antiquewhite;
+    align-items: flex;
+}
+h1{
+    text-align: center;
+    margin-top: -06px;
+    font-size: 50px;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+img {
+    top: 25px;
+    width: 250px;
+    z-index: 110;
+    left: 795pt;
+    display: flex;
+}
+button {
+    border-radius: 7px;
+    background-color: yellow;  
+}
+.texto_apresentacao {
+    font-weight: bold;
+    font-size: 18px;
+}
