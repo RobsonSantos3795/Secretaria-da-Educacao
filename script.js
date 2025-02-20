@@ -13,3 +13,6 @@ function b() {
 function c() {
     location.href = 'index.html';
 }
+function cst() {
+    location.href = 'https://docs.google.com/spreadsheets/d/1mVFvSkV2fRBPLXdbnQS7aTq6bTyYzL1rhw2PS8vc3fE/edit?gid=0#gid=0'
+}
