@@ -7,7 +7,7 @@ function a() {
 }
 
 function b() {
-    location.href = 'https://docs.google.com/spreadsheets/d/1yt_qeXiGPjnSmJKmJsifPMFRVVQyPqfp/edit?usp=drive_link&ouid=102177858714136949873&rtpof=true&sd=true';
+    location.href = 'https://docs.google.com/spreadsheets/d/1lDTHl4ghTcoijajsTul6gp4kPE2URoDhOL9Liy8BqjQ/edit?gid=1439986972#gid=1439986972';
 }
 
 function c() {
