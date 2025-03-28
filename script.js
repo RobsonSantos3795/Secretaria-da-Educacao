@@ -3,11 +3,11 @@ function convenio() {
 }
 
 function a() {
-    location.href = 'https://docs.google.com/spreadsheets/d/1AqDa_jx5DmvPxmmPRZ8BFpVfuqbOKBEiAcE8MGBmLnA/edit?usp=drive_link';
+    location.href = ' ';
 }
 
 function b() {
-    location.href = 'https://docs.google.com/spreadsheets/d/1lDTHl4ghTcoijajsTul6gp4kPE2URoDhOL9Liy8BqjQ/edit?gid=1439986972#gid=1439986972';
+    location.href = ' ';
 }
 
 function c() {
