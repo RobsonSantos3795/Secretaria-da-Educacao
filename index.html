@@ -3,175 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Secretaria da Educacao do Governo do Estado da Bahia</title>
+    <title>SECRETARIA-DA-EDUCACAO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            max-width: 90%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .logo {
+            max-width: 150px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2em;
+        }
+        h2 {
+            color: #555;
+            font-size: 1.5em;
+        }
+        .descricao {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .botoes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .botao {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .botao:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .descricao {
+                font-size: 1em;
+            }
+            .botao {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            .logo {
+                max-width: 100px;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
-    <img src="Logo da Sec_Edu.png">
-
-    <h1>Teste de armazenamento de dados</h1>
-    <h2>Secretaria da Educação do Governo do Estado</h2>
-    
-    <br><br><br>
-
-    <ul>
-        <li>
-            <p class="texto_apresentacao">Observações: Site criado com a proposta de agilizar e facilitar a procura de acesso de dados,
-                 facilitando a usabilidade do usuário!</p>
-        </li>
-    </ul>
-    
-    <div class="botao1">
-        <ul>
-            <li>
-                <label>PASTA CONVÊNIO</label>
-                <button onclick="convenio()">Entrar</button>
-            </li>
-        </ul>  
+    <div class="container">
+        <img src="Logo da Sec_Edu.png" alt="Logo Secretaria da Educação" class="logo">
+        <h1>Secretaria da Educação - Estado da Bahia</h1>
+        <h2>Armazenamento de Dados</h2>
+        <p class="descricao">Site criado para agilizar e facilitar o acesso a informações importantes, melhorando a experiência do usuário.</p>
+        
+        <div class="botoes-container">
+            <button class="botao" onclick="convenio()">Pasta Convênio</button>
+            <button class="botao" onclick="cst()">Pasta CST</button>
+            <button class="botao" onclick="ctran()">Pasta CTRAN</button>
+            <button class="botao" onclick="patrimonio()">Pasta Patrimônio</button>
+            <button class="botao" onclick="processante()">Pasta Comissão Processante</button>
+            <button class="botao" onclick="copel()">Pasta COPEL</button>
+            <button class="botao" onclick="astec()">Pasta ASTEC</button>
+            <button class="botao" onclick="df()">Pasta DF</button>
+            <button class="botao" onclick="da()">Pasta DA</button>
+            <button class="botao" onclick="contratos()">Pasta Contratos</button>
+            <button class="botao" onclick="encargos()">Pasta Encargos Gerais</button>
+            <button class="botao" onclick="suprimentos()">Pasta Suprimentos</button>
+            <button class="botao" onclick="orcamentaria()">Pasta Execução Orçamentária</button>
+            <button class="botao" onclick="ccs()">Pasta CCS</button>
+            <button class="botao" onclick="cof()">Pasta COF</button>
+            <button class="botao" onclick="contas()">Pasta Prestação de Contas</button>
+        </div>
     </div>
-
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA CST</label>
-                <button onclick="cst()">Entrar</button>
-            </li>
-        </ul>   
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA CTRAN</label>
-                <button onclick="ctran()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA PATRIMÔNIO</label>
-                <button onclick="patrimonio()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA COMISSÃO PROCESSANTE</label>
-                <button onclick="processante()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA COPEL</label>
-                <button onclick="copel()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA ASTEC</label>
-                <button onclick="astec()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA DF</label>
-                <button onclick="df()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA DA</label>
-                <button onclick="da()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA CONTRATOS</label>
-                <button onclick="contratos()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA ENCARGOS GERAIS</label>
-                <button onclick="encargos()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA SUPRIMENTOS</label>
-                <button onclick="suprimentos()">Entrar</button>
-            </li>
-        </ul>
-    
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA EXECUÇÃO ORÇAMENTÁRIA</label>
-                <button onclick="orcamentaria()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA CCS</label>
-                <button onclick="ccs()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA COF</label>
-                <button onclick="cof()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="botao">
-        <ul>
-            <li>
-                <label>PASTA PRESTAÇÃO DE CONTAS</label>
-                <button onclick="contas()">Entrar</button>
-            </li>
-        </ul>
-    </div>
-    
-
-    <br><br><br>
-
     <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
