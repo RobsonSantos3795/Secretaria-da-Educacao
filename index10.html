@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN-CST</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        input { display: block; margin: 10px auto; padding: 10px; }
+        button { padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Usuário">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <button onclick="v()">Voltar</button>
+
+    <script>
+        function v() {
+            location.href = 'index.html';
+        }
+
+
+        function login() {
+            const user = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+
+            // Lista de credenciais permitidas
+            const validUsers = [
+                { username: "admin", password: "12345" },
+                { username: "user", password: "67890" },
+                { username: "joaoadmin" , password: "joaoadmin"},
+                { username: "12345" , password: "12345"}
+            ];
+
+            // Verifica se existe um usuário com as credenciais informadas
+            const isValid = validUsers.some(cred => cred.username === user && cred.password === pass);
+
+            if (isValid) {
+                window.location.href = "index3.html?auth=true";
+            } else {
+                alert("Usuário ou senha incorretos! Tente Novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
